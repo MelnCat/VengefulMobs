@@ -1,0 +1,59 @@
+mobs:
+  # The list of mobs to enable. You can add or remove from this list as needed.
+  enabled:
+    - allay
+    - axolotl
+    - bee
+    - cat
+    - chicken
+    - cod
+    - cow
+    - dolphin
+    - donkey
+    - fox
+    - frog
+    - glow_squid
+    - horse
+    - mule
+    - mushroom_cow
+    - ocelot
+    - pig
+    - rabbit
+    - salmon
+    - sheep
+    - snowman
+    - squid
+    - tadpole
+    - tropical_fish
+    - turtle
+    - villager
+  # The default config for mobs that are enabled.
+  default:
+    # The attack damage (in half hearts)
+    damage: 2.0
+    # The mode of retaliation. Can be RETALIATE, HOSTILE, MURDER_ALL, MURDER_OTHERS, or DISABLED
+    # RETALIATE - Fight back against attackers
+    # HOSTILE - Attack all players
+    # MURDER_ALL - Attack all entities
+    # MURDER_OTHERS - Attack all entities, except those who are the same type of mob
+    mode: RETALIATE
+  overrides:
+  # List of mobs to have their configuration overridden. All properties are optional.
+  # Any type listed in EntityType will work. Types are case insensitive.
+  # !!!! Adding a mob to this list does not enable it! You must add it to the enabled list as well. !!!!
+    chicken:
+      damage: 1.5
+    cow:
+      damage: 5.0
+    pig:
+      damage: 3.5
+    sheep:
+      damage: 2.5
+    villager:
+      damage: 5.2
+    squid:
+      damage: 3.2
+      mode: HOSTILE
+    glow_squid:
+      damage: 3.2
+      mode: HOSTILE

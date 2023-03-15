@@ -1,0 +1,10 @@
+name: VengefulMobs
+version: '1.0.0'
+main: dev.melncat.vengefulmobs.VengefulMobs
+api-version: 1.17
+authors: [ MelnCat ]
+description: Makes passive mobs fight back.
+commands:
+  vengefulmobs:
+    usage: /<command> [reload]
+    description: The main plugin command
