@@ -97,7 +97,6 @@ public class EntityListener implements Listener {
 	
 	@EventHandler
 	private void on(EntityDamageByEntityEvent event) {
-		plugin.getLogger().info(event.getEntity() + "BY " + event.getDamager());
 		Entity damager = event.getDamager();
 		if (!plugin.config().isEnabled(damager.getType())) return;
 		if (!(damager instanceof Creature c)) return;
@@ -106,9 +105,7 @@ public class EntityListener implements Listener {
 			c.setTarget(null);
 			c.setKiller(null);
 			Goal<?> goal = Bukkit.getMobGoals().getGoal(c, VanillaGoal.HURT_BY);
-			plugin.getLogger().info(goal + "A");
 			if (goal != null) goal.stop();
-			
 		}
 	}
 }
