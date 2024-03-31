@@ -44,7 +44,7 @@ public final class VengefulMobs extends JavaPlugin {
 					if (args[0].equalsIgnoreCase("reload")) {
 						reloadConfig();
 						config.loadConfig(getConfig());
-						sender.sendMessage(Component.text("Configuraton reloaded.").color(NamedTextColor.GREEN));
+						sender.sendMessage(Component.text("Configuration reloaded.").color(NamedTextColor.GREEN));
 						return true;
 					}
 				}

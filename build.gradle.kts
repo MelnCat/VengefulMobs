@@ -1,10 +1,10 @@
 plugins {
     `java-library`
-    id("io.papermc.paperweight.userdev") version "1.5.3"
+    id("io.papermc.paperweight.userdev") version "1.5.11"
 }
 
 group = "dev.melncat"
-version = "1.0.0"
+version = "1.1.0"
 description = "Makes passive mobs fight back."
 
 java {

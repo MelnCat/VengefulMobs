@@ -4,7 +4,6 @@ import dev.melncat.vengefulmobs.VengefulMobs;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Creature;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Mob;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.EnumMap;
@@ -66,6 +65,8 @@ public class Config {
 	public static class MobConfig {
 		public enum Mode {
 			RETALIATE,
+			RETALIATE_ONCE,
+			RETALIATE_WITH_SUPPORT,
 			HOSTILE,
 			MURDER_ALL,
 			MURDER_OTHERS

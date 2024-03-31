@@ -31,8 +31,10 @@ mobs:
   default:
     # The attack damage (in half hearts)
     damage: 2.0
-    # The mode of retaliation. Can be RETALIATE, HOSTILE, MURDER_ALL, MURDER_OTHERS, or DISABLED
+    # The mode of retaliation. Can be RETALIATE, RETALIATE_ONCE, RETALIATE_WITH_SUPPORT, HOSTILE, MURDER_ALL, or MURDER_OTHERS
     # RETALIATE - Fight back against attackers
+    # RETALIATE_ONCE - Fight back, but only once
+    # RETALIATE_WITH_SUPPORT - Fight back while having other mobs of same type also fight, similar to zombified piglins
     # HOSTILE - Attack all players
     # MURDER_ALL - Attack all entities
     # MURDER_OTHERS - Attack all entities, except those who are the same type of mob
@@ -40,17 +42,23 @@ mobs:
   overrides:
   # List of mobs to have their configuration overridden. All properties are optional.
   # Any type listed in EntityType will work. Types are case insensitive.
-  # !!!! Adding a mob to this list does not enable it! You must add it to the enabled list as well. !!!!
+  # [!] Adding a mob to this list does not enable it! You must add it to the enabled list as well.
     chicken:
       damage: 1.5
     cow:
       damage: 5.0
+    cod:
+      damage: 1.0
+      mode: RETALIATE_WITH_SUPPORT
     pig:
       damage: 3.5
     sheep:
       damage: 2.5
     villager:
       damage: 5.2
+      mode: RETALIATE_ONCE
+    horse:
+      mode: RETALIATE_ONCE
     squid:
       damage: 3.2
       mode: HOSTILE
