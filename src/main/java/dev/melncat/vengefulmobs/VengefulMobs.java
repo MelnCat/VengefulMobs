@@ -33,7 +33,7 @@ public final class VengefulMobs extends JavaPlugin {
 					sender.sendMessage(
 						Component.text(getName()).color(NamedTextColor.YELLOW)
 							.append(Component.text(" v").color(NamedTextColor.GRAY))
-							.append(Component.text("1.0.0").color(NamedTextColor.GREEN))
+							.append(Component.text("1.1.1").color(NamedTextColor.GREEN))
 							.append(Component.newline())
 							.append(Component.text("Made by ").color(NamedTextColor.GRAY))
 							.append(Component.text("MelnCat").color(NamedTextColor.GREEN))
